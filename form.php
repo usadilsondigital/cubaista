@@ -271,55 +271,41 @@
 
 
         <div id="myDIV1" style="display: none;">
-          <!-- 1. Tourist <3 fields> First name, Last name, Email address
-<Big field / box> Your needs & wants. For example:
+          <!-- 1. Tourist <3 fields> First name, Last name, Email address ,<Big field / box> Your needs & wants. For example:
  Some travel itinerary suggestions?
  To book a specific hotel room, car rental, airport transfer, guided tour. Please provide check-in & out dates, number of passengers/Additional notes (less than 300 words)-->
-
+          <div>
+            <input type="text" class="form-control" id="firstname1" placeholder="First name" name="firstname1" autocomplete="off">
+          </div>
+          <div>
+            <input type="text" class="form-control" id="lastname1" placeholder="Last name" name="lastname1" autocomplete="off">
+          </div>
           <div>
             <input type="text" class="form-control" id="email1" placeholder="Email" name="email1" autocomplete="off">
           </div>
           <div>
-            <label for="checkin1" class="form-label">Check-in date:</label>
-            <input type="date" class="form-control" id="checkin1" name="checkin1" autocomplete="off">
+          <textarea class="form-control" id="additional_notes1" name="additional_notes1" rows="4" cols="50">
+          Your needs & wants. For example:  Some travel itinerary suggestions?
+          To book a specific hotel room, car rental, airport transfer, guided tour. 
+          Please provide check-in & out dates, number of passengers
+         </textarea>
           </div>
-          <div>
-            <label for="checkout1" class="form-label">Check-out date:</label>
-            <input type="date" class="form-control" id="checkout1" name="checkout1" autocomplete="off">
-          </div>
-          <div>
-            <label for="hotel1" class="form-label">Hotel:</label>
-            <input type="text" class="form-control" id="hotel1" placeholder="Hotel" name="hotel1" autocomplete="off">
-          </div>
-          <div>
-            <label for="type_room" class="form-label">Type of Room:</label>
-            <input type="text" class="form-control" id="type_room" placeholder="Type of Room" name="type_room" autocomplete="off">
-          </div>
-          <div>
-            <label for="passengers" class="form-label">Number of passengers:</label>
-            <input type="text" class="form-control" id="passengers" placeholder="Number of passengers" name="passengers" autocomplete="off">
-          </div>
-          <div>
-            <label for="additional_notes1" class="form-label">Additional notes:</label>
-            <input type="text" class="form-control" id="additional_notes1" placeholder="Additional notes" name="additional_notes1" autocomplete="off">
-          </div>
-        </div>
 
-        <div id="myDIV2" style="display: none;">
-          <!--2. Travel agency /Email address (mandatory)/Name of the agency /Where are you based?
+          <div id="myDIV2" style="display: none;">
+            <!--2. Travel agency /Email address (mandatory)/Name of the agency /Where are you based?
 Website URL (check is a valid website)/Additional notes (less than 300 words)-->
-          <div>
-            <label for="email2" class="form-label">Email:</label>
-            <input type="text" class="form-control" id="email2" placeholder="Email" name="email2" autocomplete="off">
-          </div>
-          <div>
-            <label for="name_agency" class="form-label">Agency Name:</label>
-            <input type="text" class="form-control" id="name_agency" placeholder="Agency Name" name="name_agency" autocomplete="off">
-          </div>
-          <div>
-            <label for="based2" class="form-label">based:</label>
-            <select class="form-control" name="based2[]" id="based2" multiple>
-            <option value="Afghanistan">Afghanistan</option>
+            <div>
+              <label for="email2" class="form-label">Email:</label>
+              <input type="text" class="form-control" id="email2" placeholder="Email" name="email2" autocomplete="off">
+            </div>
+            <div>
+              <label for="name_agency" class="form-label">Agency Name:</label>
+              <input type="text" class="form-control" id="name_agency" placeholder="Agency Name" name="name_agency" autocomplete="off">
+            </div>
+            <div>
+              <label for="based2" class="form-label">based:</label>
+              <select class="form-control" name="based2[]" id="based2" multiple>
+                <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
                 <option value="Albania">Albania</option>
                 <option value="Algeria">Algeria</option>
@@ -563,29 +549,30 @@ Website URL (check is a valid website)/Additional notes (less than 300 words)-->
                 <option value="Yemen">Yemen</option>
                 <option value="Zambia">Zambia</option>
                 <option value="Zimbabwe">Zimbabwe</option>
-  </select></div>
-          <div>
-            <label for="website2" class="form-label">Website:</label>
-            <input type="text" class="form-control" id="website2" placeholder="Entra el website" name="website2" autocomplete="off">
+              </select>
+            </div>
+            <div>
+              <label for="website2" class="form-label">Website:</label>
+              <input type="text" class="form-control" id="website2" placeholder="Entra el website" name="website2" autocomplete="off">
+            </div>
+            <div>
+              <label for="additional_notes2" class="form-label">Additional notes:</label>
+              <input type="text" class="form-control" id="additional_notes2" placeholder="Additional notes" name="additional_notes2" autocomplete="off">
+            </div>
           </div>
-          <div>
-            <label for="additional_notes2" class="form-label">Additional notes:</label>
-            <input type="text" class="form-control" id="additional_notes2" placeholder="Additional notes" name="additional_notes2" autocomplete="off">
-          </div>
-        </div>
 
-        <div id="myDIV3" style="display: none;">
-          <!-- 3. Tour operator /Email address (mandatory)/Where are you based?/Website URL (check is a valid website)
+          <div id="myDIV3" style="display: none;">
+            <!-- 3. Tour operator /Email address (mandatory)/Where are you based?/Website URL (check is a valid website)
 Additional notes (less than 300 words) -->
 
-          <div>
-            <label for="email3" class="form-label">Email:</label>
-            <input type="text" class="form-control" id="email3" placeholder="Email" name="email3" autocomplete="off">
-          </div>
-          <div>
-            <label for="based3" class="form-label">based3:</label>
-            <select  class="form-control" name="based3[]" id="based3" multiple>
-            <option value="Afghanistan">Afghanistan</option>
+            <div>
+              <label for="email3" class="form-label">Email:</label>
+              <input type="text" class="form-control" id="email3" placeholder="Email" name="email3" autocomplete="off">
+            </div>
+            <div>
+              <label for="based3" class="form-label">based3:</label>
+              <select class="form-control" name="based3[]" id="based3" multiple>
+                <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
                 <option value="Albania">Albania</option>
                 <option value="Algeria">Algeria</option>
@@ -829,48 +816,48 @@ Additional notes (less than 300 words) -->
                 <option value="Yemen">Yemen</option>
                 <option value="Zambia">Zambia</option>
                 <option value="Zimbabwe">Zimbabwe</option>
-  </select>
+              </select>
+            </div>
+            <div>
+              <label for="website3" class="form-label">Website:</label>
+              <input type="text" class="form-control" id="website3" placeholder="Entra el website" name="website3" autocomplete="off">
+            </div>
+            <div>
+              <label for="additional_notes3" class="form-label">Additional notes:</label>
+              <input type="text" class="form-control" id="additional_notes3" placeholder="Additional notes" name="additional_notes3" autocomplete="off">
+            </div>
           </div>
-          <div>
-            <label for="website3" class="form-label">Website:</label>
-            <input type="text" class="form-control" id="website3" placeholder="Entra el website" name="website3" autocomplete="off">
-          </div>
-          <div>
-            <label for="additional_notes3" class="form-label">Additional notes:</label>
-            <input type="text" class="form-control" id="additional_notes3" placeholder="Additional notes" name="additional_notes3" autocomplete="off">
-          </div>
-        </div>
 
-        <div id="myDIV4" style="display: none;">
-          <!-- 4. Group organizer /Email/Hotel / touristic pole of interest/Check-in date (if applicable)
+          <div id="myDIV4" style="display: none;">
+            <!-- 4. Group organizer /Email/Hotel / touristic pole of interest/Check-in date (if applicable)
     Check-out date (if applicable)/Additional notes (less than 300 words) -->
 
-          <div>
-            <label for="email4" class="form-label">Email:</label>
-            <input type="text" class="form-control" id="email4" placeholder="Email" name="email4" autocomplete="off">
+            <div>
+              <label for="email4" class="form-label">Email:</label>
+              <input type="text" class="form-control" id="email4" placeholder="Email" name="email4" autocomplete="off">
+            </div>
+            <div>
+              <label for="checkin4" class="form-label">Check-in date:</label>
+              <input type="date" class="form-control" id="checkin4" name="checkin4" autocomplete="off">
+            </div>
+            <div>
+              <label for="checkout4" class="form-label">Check-out date:</label>
+              <input type="date" class="form-control" id="checkout4" name="checkout4" autocomplete="off">
+            </div>
+            <div>
+              <label for="hotel4" class="form-label">Hotel:</label>
+              <input type="text" class="form-control" id="hotel4" placeholder="Hotel" name="hotel4" autocomplete="off">
+            </div>
+            <div>
+              <label for="additional_notes4" class="form-label">Additional notes:</label>
+              <input type="text" class="form-control" id="additional_notes4" placeholder="Additional notes" name="additional_notes4" autocomplete="off">
+            </div>
           </div>
-          <div>
-            <label for="checkin4" class="form-label">Check-in date:</label>
-            <input type="date" class="form-control" id="checkin4" name="checkin4" autocomplete="off">
-          </div>
-          <div>
-            <label for="checkout4" class="form-label">Check-out date:</label>
-            <input type="date" class="form-control" id="checkout4" name="checkout4" autocomplete="off">
-          </div>
-          <div>
-            <label for="hotel4" class="form-label">Hotel:</label>
-            <input type="text" class="form-control" id="hotel4" placeholder="Hotel" name="hotel4" autocomplete="off">
-          </div>
-          <div>
-            <label for="additional_notes4" class="form-label">Additional notes:</label>
-            <input type="text" class="form-control" id="additional_notes4" placeholder="Additional notes" name="additional_notes4" autocomplete="off">
-          </div>
-        </div>
 
-        <button type="submit" name="submit" value="Submit" class="btn btn-primary">Submit</button>
+          <button type="submit" name="submit" value="Submit" class="btn btn-primary">Submit</button>
 
 
-        <br><br>
+          <br><br>
       </form>
       <br>
     </div>
