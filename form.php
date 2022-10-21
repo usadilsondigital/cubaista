@@ -271,8 +271,10 @@
 
 
         <div id="myDIV1" style="display: none;">
-          <!-- 1. Tourist /Email address (mandatory) /Check-in date (mandatory)/Check-out date (mandatory)
-Hotel / touristic pole of interest/Type of room/Number of passengers/Additional notes (less than 300 words)-->
+          <!-- 1. Tourist <3 fields> First name, Last name, Email address
+<Big field / box> Your needs & wants. For example:
+ Some travel itinerary suggestions?
+ To book a specific hotel room, car rental, airport transfer, guided tour. Please provide check-in & out dates, number of passengers/Additional notes (less than 300 words)-->
 
           <div>
             <input type="text" class="form-control" id="email1" placeholder="Email" name="email1" autocomplete="off">
